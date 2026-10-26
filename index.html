@@ -68,6 +68,15 @@
     margin: 20px 0;
   }
   .callout p:last-child { margin-bottom: 0; }
+  .license {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 0 0 14px;
+    font-size: 0.85rem;
+  }
+  .license p:last-child { margin-bottom: 0; }
   .table-scroll { overflow-x: auto; margin: 0 0 14px; }
   table { border-collapse: collapse; width: 100%; font-size: 0.9rem; min-width: 460px; }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
@@ -87,7 +96,7 @@
 
 <header>
   <h1>Bazaarly — Privacy Policy</h1>
-  <p class="sub">Last updated: 7 October 2026 · Applies to the Android app <code>com.bazaarly</code></p>
+  <p class="sub">Last updated: 26 October 2026 · Applies to the Android app <code>com.bazaarly</code></p>
 </header>
 
 <section>
@@ -102,7 +111,8 @@
   </div>
   <p>
     You can open this policy at any time inside the app under
-    <em>Settings → About → Privacy policy</em>.
+    <em>Settings → About → Privacy policy</em>. Section 11 lists the sources of the data
+    Bazaarly shows and the licenses that apply to them.
   </p>
 
   <h2>1. Who is responsible</h2>
@@ -215,6 +225,13 @@
     IDs requested for the charts or icons you view, together with the connection information
     described above. Resetting your local app data does not delete provider logs.
   </p>
+  <p>
+    Item descriptions and recipes are bundled with the app (section 11), so viewing them sends
+    no request. The "Open in wiki" button in an item's Info view opens the item's page, or a
+    search for its name, on the Hypixel SkyBlock Wiki (hypixelskyblock.minecraft.wiki) in your
+    browser, and only when you tap it. The app itself sends nothing to the wiki; the wiki's own
+    privacy policy applies there.
+  </p>
 
   <h2>5. Permissions</h2>
   <p>
@@ -285,12 +302,53 @@
     before that version is released, and the date at the top will change accordingly.
   </p>
 
-  <h2>11. Disclaimer</h2>
+  <h2>11. Data sources and licenses</h2>
+  <p>
+    Bazaarly shows data from these sources:
+  </p>
+  <ul>
+    <li>
+      <strong>Current bazaar prices:</strong> the public Hypixel API
+      (<a href="https://api.hypixel.net" rel="noopener">api.hypixel.net</a>).
+    </li>
+    <li>
+      <strong>Price history and item icons that are not bundled with the app:</strong>
+      SkyCofl by Coflnet (<a href="https://sky.coflnet.com" rel="noopener">sky.coflnet.com</a>).
+    </li>
+    <li>
+      <strong>Item descriptions, recipes and the "Used in" list</strong> in an item's Info view:
+      the <a href="https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO" rel="noopener">NotEnoughUpdates-REPO</a>.
+      This data is bundled with the app and refreshed with each release.
+    </li>
+  </ul>
+  <p>
+    The "Open in wiki" button links to the
+    <a href="https://hypixelskyblock.minecraft.wiki" rel="noopener">Hypixel SkyBlock Wiki</a>;
+    no wiki texts are included in the app.
+  </p>
+
+  <h3>NotEnoughUpdates-REPO license</h3>
+  <p>
+    The item data from the NotEnoughUpdates-REPO is used under the MIT License. Its copyright
+    notice and license text are reproduced below and are also included in the app itself.
+  </p>
+  <div class="license">
+    <p>MIT License</p>
+    <p>Copyright (c) 2020 Moulberry</p>
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+    <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+    <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+  </div>
+
+  <h2>12. Disclaimer</h2>
   <p>
     Bazaarly is an unofficial, fan-made companion app. It is not affiliated with, endorsed by,
     sponsored by or associated with Hypixel Inc., Mojang AB or Microsoft. "Hypixel", "SkyBlock"
     and "Minecraft" are trademarks of their respective owners and are used here only to describe
     what the app is compatible with.
+  </p>
+  <p>
+    <strong>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</strong>
   </p>
 
 </section>
